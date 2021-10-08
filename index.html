@@ -1,31 +1,156 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>왕십리곱창볶음::Make a Relationship</title></titel>
-        <meta charset="utf-8">
-        <link href="style.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div id= "nav">
-            <img id="logo" src="images/logo (2).png">
-        </div>  
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>왕십리곱창볶음::Make a Relationship</title></titel>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="style.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
 
-        <div id="menu">
-            <div style="background-color: red;">로그인</div>
-            <div id="sec1">
-                <div style="background-color:  yellow;">비회원으로 시작</div>
-                <div id="sec2">
-                    <div style="background-color:  green;">회원가입</div>
-                    <div style="background-color:  skyblue;">아이디/비밀번호 찾기</div>
-                    <div style="background-color:  snow">고객센터</div>
-            </div>
+    <header>
+        <div class="inner">
+            <img class="logo" src="images/logo.png" alt="logo" />
+        </div>
+    </header>
+
+    <section class="notice">
+        <div class="notice__left">
+            <div class="bold">공지사항</div>
+            <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide">산학프로젝트 : 반려동물 추천 서비스</div>
+                      <div class="swiper-slide">깃허브 업로드 주기적으로 할 것!</div>
+                      <div class="swiper-slide">어이어이어이어이어이어이어이어이어이어이어이어이어이어이어이</div>
+                    </div>
             </div>
         </div>
-        
-        <script src="script.js"></script>
-    </body>
+        <div class="notice__right">
+            <div>서비스 소개</div>
+            <div class="material-icons add">
+                add_circle_outline
+            </div>
+            <div class="material-icons hide off">
+                remove_circle_outline
+            </div>
+        </div>
+    </section>
 
+    <section class="help">
+        <h1 class="mainText">당신만을 위한</h1>
+        <h1 class="subText">반려동물 추천 서비스</h1>
+        <img class="logo" src="images/partner.png" alt="partner" />
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <img class="swiper-slide" src="images/slide/001.png">
+              <img class="swiper-slide" src="images/slide/002.png">
+              <img class="swiper-slide" src="images/slide/003.png">
+              <img class="swiper-slide" src="images/slide/004.png">
+              <img class="swiper-slide" src="images/slide/005.png">
+              <img class="swiper-slide" src="images/slide/006.png">
+              <img class="swiper-slide" src="images/slide/007.png">
+              <img class="swiper-slide" src="images/slide/008.png">
+              <img class="swiper-slide" src="images/slide/009.png">
+              <img class="swiper-slide" src="images/slide/010.png">
+              <img class="swiper-slide" src="images/slide/011.png">
+              <img class="swiper-slide" src="images/slide/012.png">
+              
+
+            </div>
+          </div>
+    </section>
+
+    <section class="main">
+        <section class="menu">
+            <div class="menuList">
+                <div> 
+                    <span class="material-icons">
+                        search
+                    </span>
+                    <h1>검 색</h1>
+                </div>
+            </div>
+            <div class="menuList">
+                <div>
+                    <span class="material-icons">
+                    pets
+                    </span>
+                    <h1>추 천</h1>
+                </div>
+            </div>
+            <div class="menuList">
+                <div>
+                    <span class="material-icons">
+                        store
+                    </span>
+                    <h1>쇼핑몰</h1>
+                </div>
+            </div>
+            <div class="menuList">
+                <div>
+                    <span class="material-icons">
+                        volunteer_activism
+                    </span>
+                    <h1>분 양</h1>
+                </div>
+            </div>
+            <div class="menuList">
+                <div>
+                    <span class="material-icons">
+                        edit
+                    </span>
+                    <h1>후 기</h1>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="board">
+            <div class="board__search element">
+                <span class="material-icons">
+                    highlight_off
+                </span>       
+            </div>
+            <div class="board__pets element">
+                <span class="material-icons">
+                    highlight_off
+                </span>       
+            </div>
+            <div class="board__store element">
+                <span class="material-icons">
+                    highlight_off
+                </span>       
+            </div>
+            <div class="board__adopt element">
+                <span class="material-icons">
+                    highlight_off
+                </span>       
+            </div>
+            <div class="board__comment element">
+                <span class="material-icons">
+                    highlight_off
+                </span>       
+            </div>
+        </section>
+    <section>
+    <a href="https://open.kakao.com/o/sNPQi2Dd" target="_blank">
+        <div class="counsel">
+            <img src="images/kakao.png"/>
+            <h1>상담하기</h1>    
+        </div>
+    </a>
+</body>
 </html>
