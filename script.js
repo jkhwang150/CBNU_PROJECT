@@ -1,5 +1,5 @@
 // COMMON
-let userCount = 0;
+
 
 
 
@@ -27,6 +27,12 @@ btnAdd.addEventListener('click',function(){
         })
         const logo = document.querySelector('.help .logo');
         logo.classList.add('active');
+        const swipe = document.querySelector('.help .swiper');
+        swipe.classList.add('active');
+        const slides = document.querySelectorAll('.help .swiper .swiper-slide');
+        slides.forEach(function(slide,index){
+                slide.classList.add('active');
+        })
 })
 
 btnAdd.addEventListener('mouseover',function(){
@@ -48,6 +54,12 @@ btnHide.addEventListener('click',function(){
         })
         const logo = document.querySelector('.help .logo');
         logo.classList.remove('active');
+        const swipe = document.querySelector('.help .swiper');
+        swipe.classList.remove('active');
+        const slides = document.querySelectorAll('.help .swiper .swiper-slide');
+        slides.forEach(function(slide,index){
+                slide.classList.remove('active');
+        })
 })
 
 btnHide.addEventListener('mouseover',function(){
@@ -63,7 +75,7 @@ const helpSwiper = new Swiper('.help .swiper', {
         direction: 'horizontal',
         loop: true,
         autoplay: {
-          delay: -19
+          delay: 0
         },
         slidesPerView: 12,
         spaceBetween : 20,
@@ -87,15 +99,19 @@ menuLists.forEach(function(menu,index){
 
 const btnCancel = document.querySelector('.board .element .material-icons');
 const btnCancels = document.querySelectorAll('.board .element .material-icons');
-btnCancel.addEventListener('mouseover',function(){
-        btnCancel.innerHTML = 'cancel';
-})
-btnCancel.addEventListener('mouseout',function(){
-        btnCancel.innerHTML = 'highlight_off';
-})
 btnCancels.forEach(function(btn,index){
+        btn.addEventListener('mouseover',function(){
+                btn.innerHTML = 'cancel';
+        })
+
+        btn.addEventListener('mouseout',function(){
+        btn.innerHTML = 'highlight_off';
+        })
+
         btn.addEventListener('click',function(){
                 boards[`${index}`].classList.remove('select');
                 menuLists[`${index}`].classList.remove('active');
         })
 })
+
+

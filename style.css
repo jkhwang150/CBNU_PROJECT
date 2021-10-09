@@ -134,6 +134,17 @@ header .logo{
 }
 
 .help .swiper {
+    width: 0px;
+    height: 150px;
+    background-color: white;
+    top:250px;
+    position: absolute;
+    left: 0;
+    transition: 3s;
+}
+
+.help .swiper.active {
+    width: 100%;
     height: 150px;
     background-color: white;
     top:250px;
@@ -144,6 +155,14 @@ header .logo{
     height: 100px;
     background-color: black;
     margin: auto 0;   
+    opacity: 0;
+    transition: 1s;
+    transition-delay: 3s;
+    transition-property: opacity;
+  }
+
+  .help .swiper .swiper-wrapper .swiper-slide.active{
+    opacity: 1;
   }
 
 .help .logo{
