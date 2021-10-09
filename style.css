@@ -156,14 +156,16 @@ header .logo{
     background-color: black;
     margin: auto 0;   
     opacity: 0;
-    transition: 1s;
-    transition-delay: 3s;
-    transition-property: opacity;
+
+
   }
 
   .help .swiper .swiper-wrapper .swiper-slide.active{
-    opacity: 1;
-  }
+    transition: 1s;
+    transition-delay: 3s;
+    transition-property: opacity;
+    opacity: 1; 
+}
 
 .help .logo{
     width: 300px;
