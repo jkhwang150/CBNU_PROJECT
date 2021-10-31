@@ -1,0 +1,33 @@
+# DB안 동물테이블 생성 및 데이터 삽입
+# 동물 테이블
+CREATE TABLE 동물(
+    동물과 VARCHAR(20) NOT NULL,
+    동물종 VARCHAR(20) NOT NULL,
+    경제력 INT,
+    사회성 INT,
+    훈련난이도 INT,
+    희귀성 INT,
+    시간투자 INT,
+    PRIMARY KEY(동물종)
+);
+
+# 동물 데이터 삽입
+INSERT INTO 동물 VALUES ('개과', '리트리버', '3', '3', '2', '3', '4')
+INSERT INTO 동물 VALUES ('개과', '치와와', '2', '2', '3', '3', '3')
+INSERT INTO 동물 VALUES ('고양이과', '페르시안', '4', '1', '5', '4', '4')
+INSERT INTO 동물 VALUES ('몽구스과', '미어캣', '3', '3', '5', '4', '3')
+INSERT INTO 동물 VALUES ('자라과', '자라', '2', '1', '5', '2', '1')
+INSERT INTO 동물 VALUES ('고양이과', '러시안블루', '4', '2', '4', '4', '3');
+INSERT INTO 동물 VALUES ('소목맷돼지', '미니피그', '3', '4', '1', '4', '3');
+INSERT INTO 동물 VALUES ('거북목', '늑대거북', '2', '1', '5', '3', '2');
+INSERT INTO 동물 VALUES ('열대어', '관상어', '2', '1', '5', '2', '1');
+INSERT INTO 동물 VALUES ('여우과', '붉은여우', '4', '3', '3', '4', '3');
+INSERT INTO 동물 VALUES ('개과', '도베르만', '4', '3', '5', '4', '4');
+INSERT INTO 동물 VALUES ('풍뎅이상과', '장수풍뎅이', '1', '1', '2', '2', '1');
+INSERT INTO 동물 VALUES ('뱀목도마뱀과', '푸른혀도마뱀', '2', '2', '3', '3', '1');
+INSERT INTO 동물 VALUES ('담수어', '동아프리카폐어', '2', '1', '3', '4', '2');
+INSERT INTO 동물 VALUES ('토끼과', '폴리시', '2', '2', '4', '2', '3');
+INSERT INTO 동물 VALUES ('개과', '시츄', '3', '4', '4', '2', '3');
+
+# 데이터 정렬('동물과'에 대해 오름차순) 
+SELECT 동물과 FROM 동물 ORDER BY 동물과 ASC;
